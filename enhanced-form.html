@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee shop</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our coffee shop</h1>
+        <p>We offer a variety of coffee blends</p>
+        <video controls width="500px" height="500px">
+            <source src="media/4795016-uhd_4096_2160_25fps.mp4" type="video/mp4">
+        </video>
+        <audio controls>
+            <source src="media/coffee-shop-189585.mp3" type="audio/mp4">
+        </audio>
+    </header>
+    <main>
+        <section>
+            <h2>Here are our different coffee menu categories</h2>
+            <ul>
+                <li>Espresso</li>
+                <li>Americano</li>
+                <li>Cappuccino</li>
+                <li>Latte</li>
+                <li>Mocha</li>
+                <li>Macchiato</li>
+                <li>Flat White</li>
+                <li>Affogato</li>
+                <li>Cold Brew</li>
+                <li>Irish Coffee</li>
+                <li>Turkish Coffee</li>
+                <li>Vietnamese Coffee</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Price list</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Coffee type</th>
+                        <th>Price</th>
+                    </tr>
+                </thead >
+                <tbody >
+                    <tr>
+                        <td>Espresso</td>
+                        <td>$2.00</td>
+                    </tr>
+                    <tr>
+                        <td>Americano</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Mocha</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Macchiato</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Flat White</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Affogato</td>
+                        <td>$4.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Brew</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Irish Coffee</td>
+                        <td>$5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Turkish Coffee</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>Vietnamese Coffee</td>
+                        <td>$3.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Order your coffee</h2>
+            <form action="" method="">
+                <fieldset>
+                    <legend>Personal info</legend>
+                    <label for="name">Fullname</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your ful name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Order details</legend>
+                    <label for="coffee-type">Coffee Type</label>
+                    <select id="coffee-type" name="coffee-type" required>
+                        <option value="" disabled selected>Select your coffee</option>
+                        <option value="espresso">Espresso</option>
+                        <option value="americano">Americano</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="latte">Latte</option>
+                        <option value="mocha">Mocha</option>
+                        <option value="macchiato">Macchiato</option>
+                        <option value="flat-white">Flat White</option>
+                        <option value="affogato">Affogato</option>
+                        <option value="cold-brew">Cold Brew</option>
+                        <option value="irish-coffee">Irish Coffee</option>
+                        <option value="turkish-coffee">Turkish Coffee</option>
+                        <option value="vietnamese-coffee">Vietnamese Coffee</option>
+                    </select> 
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any special requests?"></textarea>
+                    <label for="payment-method">Payment Method</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="" disabled selected>Select payment method</option>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="debit-card">Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cash">Cash on Delivery</option>
+                    </select>
+                    <button type="submit">Place Order</button> 
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+    
+</body>
+</html>
